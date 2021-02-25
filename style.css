@@ -86,7 +86,7 @@ body {
   margin-right: 0;
 }
 
-.drum-play {
+.touched {
   transform: translateY(2px);
   border: 2px solid rgba(255, 190, 69, .7);
   box-shadow: 0 .4rem 1.2rem -.5rem rgb(255, 190, 69);
