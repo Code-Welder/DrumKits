@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrumKits small app...</title>
+    <link rel="stylesheet" href="./style.css">
+    <script async src="./main.js"></script>
+  </head>
+  <body>
+
+    <div class="center-wrap">
+
+      <div class="drums-panel">
+        <div class="drum" data-key="KeyA"><span class="drum_key">A</span>Kick</div>
+        <div class="drum" data-key="KeyS"><span class="drum_key">S</span>Clap</div>
+        <div class="drum" data-key="KeyD"><span class="drum_key">D</span>Snare</div>
+        <div class="drum" data-key="KeyF"><span class="drum_key">F</span>Hat</div>
+        <div class="drum" data-key="KeyG"><span class="drum_key">G</span>Ride</div>
+        <div class="drum" data-key="KeyH"><span class="drum_key">H</span>Perc</div>
+      </div>
+
+      <div class="sound-selectors">
+
+        <div class="sound-selector">
+          <audio src="./drum-hits/kick/jh2_kick_live_big.wav" data-key="KeyA"></audio>
+          <select name="" id="">
+            <option value="./drum-hits/kick/jh2_kick_live_big.wav">[Kick_1]</option>
+            <option value="./drum-hits/kick/jh2_kick_live_drift.wav">[Kick_2]</option>
+            <option value="./drum-hits/kick/jh2_kick_live_hump.wav">[Kick_3]</option>
+            <option value="./drum-hits/kick/jh2_kick_live_nextdoor.wav">[Kick_4]</option>
+          </select>
+            <input type="range" id="volume" min="0" max="1" value="0.7" step="0.01">
+        </div>
+
+        <div class="sound-selector">
+          <audio src="./drum-hits/clap/jh2_clap_dry_beaut.wav" data-key="KeyS"></audio>
+          <select name="" id="">
+            <option value="./drum-hits/clap/jh2_clap_dry_beaut.wav">[Clap_1]</option>
+            <option value="./drum-hits/clap/jh2_clap_dry_group.wav">[Clap_2]</option>
+            <option value="./drum-hits/clap/jh2_clap_dry_real.wav">[Clap_3]</option>
+            <option value="./drum-hits/clap/jh2_clap_dry_shutter.wav">[Clap_4]</option>
+          </select>
+            <input type="range" id="volume" min="0" max="1" value="0.7" step="0.01">
+        </div>
+
+        <div class="sound-selector">
+          <audio src="./drum-hits/snare/jh2_snare_live_acou.wav" data-key="KeyD"></audio>
+          <select name="" id="">
+            <option value="./drum-hits/snare/jh2_snare_live_acou.wav">[Snare_1]</option>
+            <option value="./drum-hits/snare/jh2_snare_live_bolsa.wav">[Snare_2]</option>
+            <option value="./drum-hits/snare/jh2_snare_live_fae.wav">[Snare_3]</option>
+            <option value="./drum-hits/snare/jh2_snare_live_grit.wav">[Snare_4]</option>
+          </select>
+            <input type="range" id="volume" min="0" max="1" value="0.7" step="0.01">
+        </div>
+
+        <div class="sound-selector">
+          <audio src="./drum-hits/hats/jh2_hat_closed_clean.wav" data-key="KeyF"></audio>
+          <select name="" id="">
+            <option value="./drum-hits/hats/jh2_hat_closed_clean.wav">[Hat_1]</option>
+            <option value="./drum-hits/hats/jh2_hat_closed_clip.wav">[Hat_2]</option>
+            <option value="./drum-hits/hats/jh2_hat_closed_dusty.wav">[Hat_3]</option>
+            <option value="./drum-hits/hats/jh2_hat_closed_machine.wav">[Hat_4]</option>
+          </select>
+            <input type="range" id="volume" min="0" max="1" value="0.7" step="0.01">
+        </div>
+
+        <div class="sound-selector">
+          <audio src="./drum-hits/ride/jh2_ride_vinyl_beaut.wav" data-key="KeyG"></audio>
+          <select name="" id="">
+            <option value="./drum-hits/ride/jh2_ride_vinyl_beaut.wav">[Ride_1]</option>
+            <option value="./drum-hits/ride/jh2_ride_vinyl_dink.wav">[Ride_2]</option>
+            <option value="./drum-hits/ride/jh2_ride_vinyl_glass.wav">[Ride_3]</option>
+            <option value="./drum-hits/ride/jh2_ride_vinyl_light.wav">[Ride_4]</option>
+          </select>
+            <input type="range" id="volume" min="0" max="1" value="0.7" step="0.01">
+        </div>
+
+        <div class="sound-selector">
+          <audio src="./drum-hits/perc/jh2_percussion_foley_double.wav" data-key="KeyH"></audio>
+          <select name="" id="">
+            <option value="./drum-hits/perc/jh2_percussion_foley_double.wav">[Perc_1]</option>
+            <option value="./drum-hits/perc/jh2_percussion_foley_fill.wav">[Perc_2]</option>
+            <option value="./drum-hits/perc/jh2_percussion_stick_gallop.wav">[Perc_3]</option>
+            <option value="./drum-hits/perc/jh2_percussion_stick_tight.wav">[Perc_4]</option>
+          </select>
+            <input type="range" id="volume" min="0" max="1" value="0.7" step="0.01">
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
